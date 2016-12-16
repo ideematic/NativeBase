@@ -110,7 +110,7 @@ export default class PickerNB extends NativeBaseComponent {
                 textStyle={this.props.textStyle}
                 style={[this.props.style,additionalProps]}
                 onPress={() => {this._setModalVisible(true)}}>
-                {this.state.currentLabel}
+                <Text>{this.state.currentLabel}</Text>
                 {(this.props.iosIcon == undefined) ? <View style={{ width: 0, height: 0 }} /> : this.renderIcon()}
             </Button>
             <Modal animationType='slide'
